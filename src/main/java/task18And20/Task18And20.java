@@ -1,7 +1,10 @@
 package task18And20;
 
+import org.omg.CORBA.Object;
+
 import java.util.Arrays;
 import java.util.function.IntFunction;
+import java.lang.reflect.Array;
 
 public class Task18And20 {
 
@@ -11,10 +14,9 @@ public class Task18And20 {
         return result;
     }
 
-    @SafeVarargs public static final <T> T[] repeat(int n, T... objs){
+    @SafeVarargs public static <T> T[] repeat(int n, T... objs){
         @SuppressWarnings("unchecked") T[] array =
-                (T[]) java.lang.reflect.Array.newInstance(
-                        objs.getClass().getComponentType(), objs.length*n);
+                (T[]) Array.newInstance(objs.getClass().getComponentType(), objs.length*n);
         for (int i = 0; i < objs.length; i++){
             for (int j = i; j < array.length; j += objs.length){
                 array[j] = objs[i];

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab4fc87-7ff9-4597-895f-a8dcc463dc6b" name="Default Changelist" comment="" />
+    <list default="true" id="7ab4fc87-7ff9-4597-895f-a8dcc463dc6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/task10To13/Arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task10And12/Arrays.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task18And20/Task18And20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task18And20/Task18And20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task6/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task6/Task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task8/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jTVOiPiogXi0s1Tok2GESOwcvw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -24,14 +34,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laboratornaya5" />
   </component>
-  <component name="RunManager" selected="Application.Task14">
-    <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task10And12.Arrays" />
+  <component name="RunManager" selected="Application.Contravariance">
+    <configuration name="ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.ArrayList" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task10And12.*" />
+          <option name="PATTERN" value="dop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -39,12 +50,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pair" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task8.Pair" />
+    <configuration name="Contravariance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.Contravariance" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task8.*" />
+          <option name="PATTERN" value="dop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -52,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task14" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task14.Task14" />
+    <configuration name="Covariance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.Covariance" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task14.*" />
+          <option name="PATTERN" value="dop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task16.Task16" />
+    <configuration name="Task21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task21.Task21" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task16.*" />
+          <option name="PATTERN" value="task21.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task18And20" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task18And20.Task18And20" />
+    <configuration name="Task25" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task25.Task25" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task18And20.*" />
+          <option name="PATTERN" value="task25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task14" />
-        <item itemvalue="Application.Task16" />
-        <item itemvalue="Application.Task18And20" />
-        <item itemvalue="Application.Arrays" />
-        <item itemvalue="Application.Pair" />
+        <item itemvalue="Application.Contravariance" />
+        <item itemvalue="Application.Task21" />
+        <item itemvalue="Application.ArrayList" />
+        <item itemvalue="Application.Covariance" />
+        <item itemvalue="Application.Task25" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +125,18 @@
       <workItem from="1603828041424" duration="12554000" />
       <workItem from="1603902807239" duration="9959000" />
       <workItem from="1603982875149" duration="584000" />
+      <workItem from="1604160886042" duration="575000" />
+      <workItem from="1604256395549" duration="594000" />
+      <workItem from="1604438112394" duration="15914000" />
+      <workItem from="1604671350547" duration="10298000" />
+      <workItem from="1604734207033" duration="4992000" />
+      <workItem from="1605125300869" duration="1177000" />
+      <workItem from="1605183039908" duration="464000" />
+      <workItem from="1605183699791" duration="532000" />
+      <workItem from="1605187731914" duration="92000" />
+      <workItem from="1605188007792" duration="666000" />
+      <workItem from="1605190323672" duration="1386000" />
+      <workItem from="1605264921299" duration="577000" />
     </task>
     <servers />
   </component>
@@ -121,34 +144,46 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1603840551049">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1604684559640">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603840551049" />
-    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1603905126457">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604684559640" />
+    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604734718310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1603905126457" />
+    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1604734718310" />
     <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603923414836">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1603923414836" />
-    <state width="1367" height="478" key="GridCell.Tab.0.bottom" timestamp="1603927920714">
+    <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604685988224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="478" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603927920714" />
-    <state width="1367" height="478" key="GridCell.Tab.0.center" timestamp="1603927920713">
+    <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604685988224" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604578692283">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="478" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603927920713" />
-    <state width="1367" height="478" key="GridCell.Tab.0.left" timestamp="1603927920712">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604578692283" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1605193487943">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="478" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603927920712" />
-    <state width="1367" height="478" key="GridCell.Tab.0.right" timestamp="1603927920713">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605193487943" />
+    <state width="1367" height="262" key="GridCell.Tab.0.bottom" timestamp="1604735929239">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="478" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603927920713" />
+    <state width="1367" height="262" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604735929239" />
+    <state width="1367" height="262" key="GridCell.Tab.0.center" timestamp="1604735929237">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="262" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604735929237" />
+    <state width="1367" height="262" key="GridCell.Tab.0.left" timestamp="1604735929235">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="262" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604735929235" />
+    <state width="1367" height="262" key="GridCell.Tab.0.right" timestamp="1604735929238">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1367" height="262" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604735929238" />
     <state width="1367" height="232" key="GridCell.Tab.1.bottom" timestamp="1603925039863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

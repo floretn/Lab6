@@ -1,4 +1,4 @@
-package task8;
+package task7And8;
 
 import java.util.Comparator;
 
@@ -10,6 +10,14 @@ public class Pair<E extends Comparable<? super E>> {
     public Pair(E val1, E val2) {
         this.val1 = val1;
         this.val2 = val2;
+    }
+
+    public E getVal1() {
+        return val1;
+    }
+
+    public E getVal2() {
+        return val2;
     }
 
     public E max(){

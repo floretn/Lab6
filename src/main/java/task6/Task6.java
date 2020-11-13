@@ -12,6 +12,10 @@ public class Task6 {
         arrayListTo.addAll(arrayListFrom);
     }
 
+    public static <E> void split3(ArrayList<? super E> arrayListTo, ArrayList<? extends E> arrayListFrom){
+        arrayListTo.addAll(arrayListFrom);
+    }
+
     public static void main(String[] args) {
         ArrayList<SuperClass> arrayListTo = new ArrayList<>();
         arrayListTo.add(new SuperClass("One"));
