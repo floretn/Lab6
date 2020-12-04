@@ -48,6 +48,14 @@ public class Pair<E extends Comparable<? super E>> {
         return val2;
     }
 
+    @Override
+    public String toString() {
+        return "Pair{" +
+                "val1=" + val1.toString() +
+                ", val2=" + val2.toString() +
+                '}';
+    }
+
     public static void main(String[] args) {
         Pair<Integer> pair = new Pair<>(12, 16);
         System.out.println(pair.max());
@@ -57,9 +65,7 @@ public class Pair<E extends Comparable<? super E>> {
         System.out.println(pair1.max());
         System.out.println(pair1.min());
         Comparator<String> comparator = (s1, s2) -> {
-            if(s1.length() > s2.length())
-                return 1;
-            return -1;};
+            return s1.length() - s2.length();};
         System.out.println(pair1.min(comparator));
         System.out.println(pair1.max(comparator));
     }

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab4fc87-7ff9-4597-895f-a8dcc463dc6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/task10To13/Arrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/hotswap_agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bigDop/NumberExtend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task10And12/Arrays.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task18And20/Task18And20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task18And20/Task18And20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task6/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task6/Task6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task8/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -32,17 +35,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laboratornaya5" />
   </component>
-  <component name="RunManager" selected="Application.Contravariance">
-    <configuration name="ArrayList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dop.ArrayList" />
+  <component name="RunManager" selected="Application.Inject">
+    <configuration name="BetterWithGenerics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.BetterWithGenerics" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dop.*" />
+          <option name="PATTERN" value="bigDop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,12 +54,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Contravariance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dop.Contravariance" />
+    <configuration name="BigDop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.BigDop" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dop.*" />
+          <option name="PATTERN" value="bigDop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Covariance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dop.Covariance" />
+    <configuration name="Inject" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bigDop.Inject" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dop.*" />
+          <option name="PATTERN" value="bigDop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +80,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="task21.Task21" />
+    <configuration name="RowTypesAreDangerous" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.RowTypesAreDangerous" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="task21.*" />
+          <option name="PATTERN" value="bigDop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,10 +108,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Contravariance" />
-        <item itemvalue="Application.Task21" />
-        <item itemvalue="Application.ArrayList" />
-        <item itemvalue="Application.Covariance" />
+        <item itemvalue="Application.Inject" />
+        <item itemvalue="Application.BigDop" />
+        <item itemvalue="Application.BetterWithGenerics" />
+        <item itemvalue="Application.RowTypesAreDangerous" />
         <item itemvalue="Application.Task25" />
       </list>
     </recent_temporary>
@@ -136,54 +140,76 @@
       <workItem from="1605187731914" duration="92000" />
       <workItem from="1605188007792" duration="666000" />
       <workItem from="1605190323672" duration="1386000" />
-      <workItem from="1605264921299" duration="577000" />
+      <workItem from="1605264921299" duration="21974000" />
+      <workItem from="1605304947895" duration="6938000" />
+      <workItem from="1605776271521" duration="2924000" />
+      <workItem from="1605867122962" duration="34895000" />
+      <workItem from="1606297184437" duration="12432000" />
+      <workItem from="1606397822580" duration="9464000" />
+      <workItem from="1606457631730" duration="7949000" />
+      <workItem from="1606470583200" duration="34023000" />
+      <workItem from="1606557071256" duration="2773000" />
+      <workItem from="1606770175702" duration="771000" />
+      <workItem from="1607077319810" duration="954000" />
     </task>
+    <task id="LOCAL-00001" summary="Дополнения 13.11.2020">
+      <created>1605267596691</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605267596691</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Дополнения 13.11.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дополнения 13.11.2020" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1604684559640">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1606504386508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604684559640" />
-    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1604734718310">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1606504386508" />
+    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605267852464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1604734718310" />
-    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1603923414836">
+    <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1605267852464" />
+    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1605295729041">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1603923414836" />
+    <state x="479" y="224" width="408" height="288" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1605295729041" />
     <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604685988224">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="276" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604685988224" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1604578692283">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1605267593181">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1604578692283" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1605193487943">
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1605267593181" />
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1606770296026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1605193487943" />
-    <state width="1367" height="262" key="GridCell.Tab.0.bottom" timestamp="1604735929239">
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606770296026" />
+    <state width="1367" height="451" key="GridCell.Tab.0.bottom" timestamp="1606560829448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="262" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604735929239" />
-    <state width="1367" height="262" key="GridCell.Tab.0.center" timestamp="1604735929237">
+    <state width="1367" height="451" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606560829448" />
+    <state width="1367" height="451" key="GridCell.Tab.0.center" timestamp="1606560829447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="262" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604735929237" />
-    <state width="1367" height="262" key="GridCell.Tab.0.left" timestamp="1604735929235">
+    <state width="1367" height="451" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606560829447" />
+    <state width="1367" height="451" key="GridCell.Tab.0.left" timestamp="1606560829444">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="262" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604735929235" />
-    <state width="1367" height="262" key="GridCell.Tab.0.right" timestamp="1604735929238">
+    <state width="1367" height="451" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606560829444" />
+    <state width="1367" height="451" key="GridCell.Tab.0.right" timestamp="1606560829447">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="262" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604735929238" />
+    <state width="1367" height="451" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606560829447" />
     <state width="1367" height="232" key="GridCell.Tab.1.bottom" timestamp="1603925039863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -200,10 +226,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1603925039862" />
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1605267624883">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="98" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1605267624883" />
     <state width="1364" height="726" key="com.intellij.byteCodeViewer.ShowByteCodeAction" timestamp="1603925070567">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1364" height="726" key="com.intellij.byteCodeViewer.ShowByteCodeAction/0.0.1366.728@0.0.1366.728" timestamp="1603925070567" />
+    <state x="413" y="131" key="extract.method.dialog" timestamp="1606513763152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="131" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1606513763152" />
+    <state x="65" y="60" key="new project wizard" timestamp="1606770330541">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="60" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1606770330541" />
     <state x="339" y="162" key="run.anything.popup" timestamp="1603903718243">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
