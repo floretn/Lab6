@@ -7,7 +7,7 @@ import java.lang.reflect.TypeVariable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BigDop {
+public class BigDopBad {
 
     private List<Class<?>> findSuperClasses(Class<?> clazz){
         List<Class<?>> list = new ArrayList<>();

@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab4fc87-7ff9-4597-895f-a8dcc463dc6b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/hotswap_agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bigDop/NumberExtend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/task7And8/Pair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bigDop/Inject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bigDop/Inject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dop/NewClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dop/NewClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bigDop/Inject.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bigDop/Inject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dop/NewClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dop/NewClass.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +37,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Laboratornaya5" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.Inject">
     <configuration name="BetterWithGenerics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -54,8 +55,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BigDop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dop.BigDop" />
+    <configuration name="BigDopBad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dop.BigDopBad" />
       <module name="Laboratornaya6" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +110,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Inject" />
-        <item itemvalue="Application.BigDop" />
+        <item itemvalue="Application.BigDopBad" />
         <item itemvalue="Application.BetterWithGenerics" />
         <item itemvalue="Application.RowTypesAreDangerous" />
         <item itemvalue="Application.Task25" />
@@ -150,7 +151,7 @@
       <workItem from="1606470583200" duration="34023000" />
       <workItem from="1606557071256" duration="2773000" />
       <workItem from="1606770175702" duration="771000" />
-      <workItem from="1607077319810" duration="954000" />
+      <workItem from="1607077319810" duration="43999000" />
     </task>
     <task id="LOCAL-00001" summary="Дополнения 13.11.2020">
       <created>1605267596691</created>
@@ -170,10 +171,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Дополнения 13.11.2020" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1606504386508">
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser" timestamp="1607126593558">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1606504386508" />
+    <state x="488" y="81" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607126593558" />
     <state x="395" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1605267852464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -194,22 +195,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1606770296026" />
-    <state width="1367" height="451" key="GridCell.Tab.0.bottom" timestamp="1606560829448">
+    <state width="1367" height="481" key="GridCell.Tab.0.bottom" timestamp="1607129953791">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="451" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1606560829448" />
-    <state width="1367" height="451" key="GridCell.Tab.0.center" timestamp="1606560829447">
+    <state width="1367" height="481" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1607129953791" />
+    <state width="1367" height="481" key="GridCell.Tab.0.center" timestamp="1607129953790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="451" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1606560829447" />
-    <state width="1367" height="451" key="GridCell.Tab.0.left" timestamp="1606560829444">
+    <state width="1367" height="481" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1607129953790" />
+    <state width="1367" height="481" key="GridCell.Tab.0.left" timestamp="1607129953790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="451" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1606560829444" />
-    <state width="1367" height="451" key="GridCell.Tab.0.right" timestamp="1606560829447">
+    <state width="1367" height="481" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1607129953790" />
+    <state width="1367" height="481" key="GridCell.Tab.0.right" timestamp="1607129953790">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1367" height="451" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1606560829447" />
+    <state width="1367" height="481" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1607129953790" />
     <state width="1367" height="232" key="GridCell.Tab.1.bottom" timestamp="1603925039863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -226,6 +227,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1367" height="232" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1603925039862" />
+    <state x="163" y="0" key="SettingsEditor" timestamp="1607099010577">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607099010577" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607099361356">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1607099361356" />
     <state x="275" y="98" key="Vcs.Push.Dialog.v2" timestamp="1605267624883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
