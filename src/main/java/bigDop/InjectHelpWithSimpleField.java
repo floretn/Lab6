@@ -78,30 +78,29 @@ public class InjectHelpWithSimpleField {
                     }
                 }
                 if (!(interfaceOf == null)) {
-                    try {
+                    if (interfaceOf instanceof ParameterizedType) {
                         ptCurrentClass = (ParameterizedType) interfaceOf;
-                    } catch (java.lang.ClassCastException ex) {
+                    } else {
                         listSubSubClass.add(clazz);
                         return false;
                     }
                 } else {
-                    try {
-                        ptCurrentClass = (ParameterizedType) clazz.getGenericSuperclass();
-                    } catch (java.lang.ClassCastException ex) {
+                    Type superTypeForClazz = clazz.getGenericSuperclass();
+                    if (superTypeForClazz instanceof ParameterizedType) {
+                        ptCurrentClass = (ParameterizedType) superTypeForClazz;
+                    } else {
                         listSubSubClass.add(clazz);
                         return false;
                     }
                 }
             } else {
-                try {
-                    ptCurrentClass = (ParameterizedType) clazz.getGenericSuperclass();
-                } catch (java.lang.ClassCastException ex) {
+                Type superTypeForClazz = clazz.getGenericSuperclass();
+                if (superTypeForClazz instanceof ParameterizedType) {
+                    ptCurrentClass = (ParameterizedType) superTypeForClazz;
+                } else {
                     listSubSubClass.add(clazz);
                     return false;
                 }
-            }
-            if (ptCurrentClass == null){
-                return false;
             }
             typesCurrentClass = ptCurrentClass.getActualTypeArguments();
         }else{
@@ -119,9 +118,9 @@ public class InjectHelpWithSimpleField {
             if (types[i] instanceof ParameterizedType){
                 ParameterizedType parameterizedType = (ParameterizedType) types[i];
                 ParameterizedType parameterizedTypeCurrentClass;
-                try {
+                if (typesCurrentClass[i] instanceof ParameterizedType) {
                     parameterizedTypeCurrentClass = (ParameterizedType) typesCurrentClass[i];
-                }catch (ClassCastException ex){
+                }else{
                     return false;
                 }
                 if (parameterizedType.getRawType().equals(parameterizedTypeCurrentClass.getRawType())){
@@ -137,11 +136,11 @@ public class InjectHelpWithSimpleField {
             WildcardType wt;
             Type[] lower;
             Type[] upper;
-            try{
+            if (types[i] instanceof WildcardType){
                 wt = (WildcardType) types[i];
                 lower = wt.getLowerBounds();
                 upper = wt.getUpperBounds();
-            }catch (ClassCastException ex){
+            }else{
                 return false;
             }
 
@@ -242,15 +241,14 @@ public class InjectHelpWithSimpleField {
         }
     }
 
-    boolean norm(String up, String low){
+    boolean norm(String up, String low) throws ClassNotFoundException {
         Class<?> classLow;
         Class<?> classUp;
-        try {
-            classLow = Class.forName(low);
-            classUp = Class.forName(up);
-        }catch (Throwable ex){
+        if (up.contains("<") || low.contains("<")){
             return false;
         }
+        classLow = Class.forName(low);
+        classUp = Class.forName(up);
         if (classUp.equals(Object.class)){
             return true;
         }
@@ -258,7 +256,7 @@ public class InjectHelpWithSimpleField {
             if (classUp.equals(classLow)){
                 return true;
             }
-            if (classLow.getGenericInterfaces() != null){
+            if (classLow.getGenericInterfaces().length != 0){
                 for (Class<?> clazz : classLow.getInterfaces()){
                     if (clazz.equals(classUp)){
                         return true;
@@ -279,7 +277,7 @@ public class InjectHelpWithSimpleField {
                 return true;
             }
 
-            if (clazz.getGenericInterfaces() != null) {
+            if (clazz.getGenericInterfaces().length != 0) {
                 for (Type tp : clazz.getGenericInterfaces()) {
                     if (tp.equals(type)) {
                         return true;

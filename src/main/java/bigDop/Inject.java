@@ -34,24 +34,33 @@ public class Inject {
         Class<?> clazz = o.getClass();
         InjectHelpWithSimpleField withSimpleField;
         Field fieldO;
-        try {
-            fieldO = clazz.getDeclaredField(field);
-        }catch (NoSuchFieldException nsfe){
-            Class<?> clazzNew = clazz.getSuperclass();
-            Type clazzNewType = clazz.getGenericSuperclass();
-            InjectHelpWithHardField withHardField;
-            while (!clazzNew.equals(Object.class)){
-                try {
+
+        for (Field fieldClazz : clazz.getDeclaredFields()){
+            if (fieldClazz.toString().contains(field)){
+                fieldO = clazz.getDeclaredField(field);
+                withSimpleField = new InjectHelpWithSimpleField();
+                return withSimpleField.listWork(fieldO, fieldO.getType());
+            }
+        }
+
+        Class<?> clazzNew = clazz.getSuperclass();
+        Type clazzNewType = clazz.getGenericSuperclass();
+        InjectHelpWithHardField withHardField;
+        while (!clazzNew.equals(Object.class)) {
+            for (Field fieldNew : clazzNew.getDeclaredFields()) {
+                if (fieldNew.toString().contains(field)) {
+
                     fieldO = clazzNew.getDeclaredField(field);
                     Type fieldOType = fieldO.getGenericType();
-                    if (fieldOType instanceof TypeVariable || fieldOType instanceof GenericArrayType){
+
+                    if (fieldOType instanceof TypeVariable || fieldOType instanceof GenericArrayType) {
                         withHardField = new InjectHelpWithHardField();
                         return withHardField.listWork(fieldO, clazzNew, clazzNewType, getTypeParameters(clazz));
                     }
 
-                    if (fieldOType instanceof ParameterizedType){
-                        for (Type type : ((ParameterizedType) fieldOType).getActualTypeArguments()){
-                            try {
+                    if (fieldOType instanceof ParameterizedType) {
+                        for (Type type : ((ParameterizedType) fieldOType).getActualTypeArguments()) {
+                            if (type instanceof ParameterizedType) {
                                 ParameterizedType pt = (ParameterizedType) type;
                                 for (Type type1 : pt.getActualTypeArguments()) {
                                     if (type1 instanceof TypeVariable || type1 instanceof WildcardType) {
@@ -59,8 +68,8 @@ public class Inject {
                                         return withHardField.listWork(fieldO, clazzNew, clazzNewType, getTypeParameters(clazz));
                                     }
                                 }
-                            }catch (ClassCastException cce){
-                                if (type instanceof TypeVariable || type instanceof WildcardType){
+                            } else {
+                                if (type instanceof TypeVariable || type instanceof WildcardType) {
                                     withHardField = new InjectHelpWithHardField();
                                     return withHardField.listWork(fieldO, clazzNew, clazzNewType, getTypeParameters(clazz));
                                 }
@@ -70,15 +79,12 @@ public class Inject {
 
                     withSimpleField = new InjectHelpWithSimpleField();
                     return withSimpleField.listWork(fieldO, fieldO.getType());
-                }catch (NoSuchFieldException nsfe1){
-                    clazzNew = clazzNew.getSuperclass();
-                    clazzNewType = clazz.getGenericSuperclass();
                 }
             }
-            throw nsfe;
+            clazzNew = clazzNew.getSuperclass();
+            clazzNewType = clazz.getGenericSuperclass();
         }
-        withSimpleField = new InjectHelpWithSimpleField();
-        return withSimpleField.listWork(fieldO, fieldO.getType());
+        throw new NoSuchFieldException("Не найдено поле в классе или его родительских классах");
     }
 
 
@@ -128,6 +134,8 @@ public class Inject {
         list = inject.list(new ClassExtendsCWTP(), "alManagers");
         list.forEach(System.out::println);
         System.out.println("**************************************************************************************");
+        list = inject.list(new ClassExtendsCWTP(), "fieldWhatDoesNotExists");
+        list.forEach(System.out::println);
 
     }
 }

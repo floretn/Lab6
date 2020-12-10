@@ -14,9 +14,9 @@ public class InjectHelpWithHardField {
         Type fieldTypeHowTypeParameter = field.getGenericType();
         Type fieldType;
         InjectHelpWithSimpleField withSimpleField = new InjectHelpWithSimpleField();
-        try{
+        if (fieldTypeHowTypeParameter instanceof ParameterizedType){
             pt = (ParameterizedType) fieldTypeHowTypeParameter;
-        }catch (ClassCastException ex){
+        }else{
             if (fieldTypeHowTypeParameter instanceof TypeVariable){
                 fieldType = findTypeOfField(clazz, fieldTypeHowTypeParameter, types);
                 return withSimpleField.listWork(null, Class.forName(fieldType.getTypeName()));
@@ -70,30 +70,29 @@ public class InjectHelpWithHardField {
                     }
                 }
                 if (!(interfaceOf == null)) {
-                    try {
+                    if (interfaceOf instanceof ParameterizedType) {
                         ptCurrentClass = (ParameterizedType) interfaceOf;
-                    } catch (java.lang.ClassCastException ex) {
+                    } else {
                         listSubSubClass.add(clazz);
                         return false;
                     }
                 } else {
-                    try {
-                        ptCurrentClass = (ParameterizedType) clazz.getGenericSuperclass();
-                    } catch (java.lang.ClassCastException ex) {
+                    Type superTypeForClazz = clazz.getGenericSuperclass();
+                    if (superTypeForClazz instanceof ParameterizedType) {
+                        ptCurrentClass = (ParameterizedType) superTypeForClazz;
+                    } else {
                         listSubSubClass.add(clazz);
                         return false;
                     }
                 }
             } else {
-                try {
-                    ptCurrentClass = (ParameterizedType) clazz.getGenericSuperclass();
-                } catch (java.lang.ClassCastException ex) {
+                Type superTypeForClazz = clazz.getGenericSuperclass();
+                if (superTypeForClazz instanceof ParameterizedType) {
+                    ptCurrentClass = (ParameterizedType) superTypeForClazz;
+                } else {
                     listSubSubClass.add(clazz);
                     return false;
                 }
-            }
-            if (ptCurrentClass == null){
-                return false;
             }
             typesOfSubClass = ptCurrentClass.getActualTypeArguments();
         }else {
