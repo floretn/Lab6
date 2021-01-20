@@ -3,13 +3,11 @@ package bigDop;
 import dop.Employee;
 import dop.Manager;
 import java.lang.reflect.*;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class Inject {
 
+    TreeMap<Integer, String> map;
     static ListOne al;
     ArrayList<Float> listFloat;
     Employee employee;
@@ -98,6 +96,9 @@ public class Inject {
 
     public static void main(String[] args) throws NoSuchFieldException, ClassNotFoundException {
         Inject inject = new Inject();
+        List<Class<?>> list = inject.list(inject, "map");
+        list.forEach(System.out::println);
+        /*
         System.out.println("Inject ArrayList<? extends Number> arrayList;");
         List<Class<?>> list = inject.list(inject, "arrayList");
         list.forEach(System.out::println);
@@ -126,16 +127,12 @@ public class Inject {
         list = inject.list(new ClassExtendsCWTP(), "hashMap");
         list.forEach(System.out::println);
         System.out.println("**************************************************************************************");
-        System.out.println("ClassExtendsCWTP ArrayList<? extends Comparable<H>> ah;");
-        list = inject.list(new ClassExtendsCWTP(), "ah");
-        list.forEach(System.out::println);
-        System.out.println("**************************************************************************************");
         System.out.println("ClassExtendsCWTP ArrayList<ArrayList<Manager>> alManagers;");
         list = inject.list(new ClassExtendsCWTP(), "alManagers");
         list.forEach(System.out::println);
         System.out.println("**************************************************************************************");
         list = inject.list(new ClassExtendsCWTP(), "fieldWhatDoesNotExists");
         list.forEach(System.out::println);
-
+        */
     }
 }

@@ -10,6 +10,8 @@ public class Covariance {
         for (Employee employee : list){
             System.out.println(employee.name + "'s salary = " + employee.salary);
         }
+        //list.add(new Employee("name", 123));
+
     }
 
     public static void main(String[] args) {

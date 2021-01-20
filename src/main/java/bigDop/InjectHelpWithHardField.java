@@ -7,7 +7,7 @@ import java.util.List;
 
 public class InjectHelpWithHardField {
 
-    private List<Class<?>> listSubSubClass = new ArrayList<>();
+    private final List<Class<?>> listSubSubClass = new ArrayList<>();
 
     List<Class<?>> listWork(Field field, Class<?> clazz, Type clazzType, Type[] types) throws ClassNotFoundException {
         ParameterizedType pt;

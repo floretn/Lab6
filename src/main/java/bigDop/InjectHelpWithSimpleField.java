@@ -7,7 +7,7 @@ import java.util.List;
 
 public class InjectHelpWithSimpleField {
 
-    private List<Class<?>> listSubSubClass = new ArrayList<>();
+    private final List<Class<?>> listSubSubClass = new ArrayList<>();
 
     List<Class<?>> listWork(Field fieldO, Class<?> fieldOClazz) throws ClassNotFoundException {
         ParameterizedType parameterizedType;
